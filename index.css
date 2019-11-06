@@ -1,0 +1,69 @@
+* {
+    font-family: 'Special Elite', cursive;
+    font-size: 18px;
+}
+
+body {
+	background-color: #B2E9FD;
+}
+
+.header h2 {
+	color: #DC4247;
+}
+
+.header p {
+	color: #50524F;
+}
+
+.results {
+	margin-top: 20px;
+}
+
+.movies-container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding-bottom: 15px;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.card {
+	flex-grow: 4;
+	flex-wrap: wrap;
+    max-width: 200px;
+    margin-top: 20px;
+    border: none;
+}
+
+.card-img-top {
+    border: none;
+}
+
+.card-title {
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+    color: black;
+}
+
+.btn {
+background-color: #DC4247;
+}
+
+.navbar {
+    background-color: rgb(228, 125, 129);
+}
+
+.navbar a {
+    color: rgb(0, 93, 126);
+}
+

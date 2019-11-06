@@ -1,3 +1,5 @@
+var movieData = [];
+
 document.addEventListener('DOMContentLoaded', function () {
     function renderMovies(movieArray) {
         var movieHTML = movieArray.map(function (currentMovie) {
@@ -19,15 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 
+
     document.getElementById("search-form").addEventListener("submit", function(event) {
         event.preventDefault();
 
         var searchString = document.getElementsByClassName("form-control search-bar")[0].value;
         var urlEncodedSearchString = encodeURIComponent(searchString);
-
-        axios.get("http://www.omdbapi.com/?apikey=3430a78&s=" + urlEncodedSearchString).then(function (response) {
+         
+        axios.get("https://www.omdbapi.com/?apikey=3430a78&s=" + urlEncodedSearchString).then(function (response) {
             var content = document.getElementById("movies-container");
-            content.innerHTML = renderMovies(response.data.Search);
+            movieData = response.data.Search;
+            content.innerHTML = renderMovies(movieData);
 
             console.log(response.data);
     });
@@ -47,9 +51,8 @@ function saveToWatchlist(imdbID) {
     if (watchlist === null) { //if true didnt exist
         watchlist = []; //the create new empty array
     }
-    else {
-        watchlist.push(movie);
-    }
+
+    
 
     watchlistJSON = JSON.stringify(watchlist); //make it string
     localStorage.setItem("watchlist", watchlistJSON); //store as string

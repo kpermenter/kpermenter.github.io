@@ -51,7 +51,7 @@ function saveToWatchlist(imdbID) {
         watchlist = []; //the create new empty array
     }
 
-    
+    watchlist.push(movie);
 
     watchlistJSON = JSON.stringify(watchlist); //make it string
     localStorage.setItem("watchlist", watchlistJSON); //store as string

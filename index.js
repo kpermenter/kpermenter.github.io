@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <img src="${currentMovie.Poster}" class="card-img-top" alt="Card image">
                     <div class="card-body">
                     <h5 class="card-title">${currentMovie.Title} <span class="badge badge-secondary">${currentMovie.Year}</span></h5>
-                        <button onclick="saveToWatchlist('${currentMovie.imdbID}')" class="btn btn-primary">Add</a></button>
+                        <button onclick="saveToWatchlist('${currentMovie.imdbID}')" class="btn btn-primary">Add</button>
                     </div>      
                 </div>
             </div>

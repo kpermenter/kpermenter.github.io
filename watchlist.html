@@ -20,17 +20,26 @@
 	<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <header>
-	<nav class="navbar pb-2" style="text-align: center">
-		<a class="navbar-brand" href="#">Watchlist</a>
-	  </nav>
-</header>
+		<nav class="navbar navbar-expand-lg navbar-dark indigo mb-4">
+			<a class="navbar-brand" style="font-size: 35px" href="index.html">Search more movies</a>
+	
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<form id="search-form" class="form-inline ml-auto">
+					<div class="md-form my-0">
+						<input class="form-control search-bar" id="value" type="text" placeholder="flick finder">
+					</div>
+					<button href="#!" class="btn btn-outline-warning btn-md my-0 ml-sm-2" type="submit">Search</button>
+				</form>
+	
+			</div>
+	</header>
 
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-12 header text-center">
-				<h2 class="display-2">Scene It</h2>
-				<p><a href="index.html">Search more movies</a></p>
+				<h2 class="display-2 font-size:40px">Scene It</h2>
+				<p class="pt-0">Make every night a Friday.</p>
 			</div>
 		</div>
 		<div id="movies-container" class="row results">

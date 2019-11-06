@@ -4,14 +4,16 @@
 }
 
 body {
-	background-color: #B2E9FD;
+	background-color: #e6e6e6;
 }
 
 .header h2 {
-	color: #DC4247;
+    color: black;
+    padding-top: 25px;
 }
 
-.header p {
+.p {
+    padding-top: 0px;
 	color: #50524F;
 }
 
@@ -56,10 +58,11 @@ body {
 }
 
 .navbar {
-    background-color: indigo;
+    background-color: black;
     padding-bottom: 30px;
     padding-top: 30px;
     padding-left: 40px;
     padding-right: 40px;
+    align-items: center;
 }
 

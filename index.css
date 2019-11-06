@@ -55,15 +55,11 @@ body {
     color: black;
 }
 
-.btn {
-background-color: #DC4247;
-}
-
 .navbar {
-    background-color: rgb(228, 125, 129);
-}
-
-.navbar a {
-    color: rgb(0, 93, 126);
+    background-color: indigo;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 

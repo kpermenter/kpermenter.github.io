@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var searchString = document.getElementsByClassName("form-control search-bar")[0].value;
         var urlEncodedSearchString = encodeURIComponent(searchString);
          
-        axios.get("https://www.omdbapi.com/?apikey=3430a78&s=" + urlEncodedSearchString).then(function (response) {
+        axios.get("https://www.omdbapi.com/?apikey=f5029247" + urlEncodedSearchString).then(function (response) {
             var content = document.getElementById("movies-container");
             movieData = response.data.Search;
             content.innerHTML = renderMovies(movieData);
